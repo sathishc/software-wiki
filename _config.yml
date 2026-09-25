@@ -1,0 +1,19 @@
+title: software-wiki
+description: Software Engineering knowledge base — code quality, architecture, testing, and delivery
+theme: jekyll-theme-cayman
+
+search_enabled: true
+
+plugins:
+  - jekyll-seo-tag
+
+exclude:
+  - sources/
+  - assets/
+  - CLAUDE.md
+  - log.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - "*.sh"
+  - .git
