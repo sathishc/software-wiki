@@ -75,9 +75,9 @@ lifecycle stages.
   across a team, and how *standards* are *enforced*.
 
 The **unifying thread** is **economics**: simplicity is *cheap to change*
-([refactoring](concepts/refactoring.md)), decoupling is *cheap to change*
-([solid](concepts/solid.md)), and *all of it* is *repaying interest* on the
-debt you took to move fast ([technical-debt](concepts/technical-debt.md)).
+([refactoring](../concepts/refactoring.md)), decoupling is *cheap to change*
+([solid](../concepts/solid.md)), and *all of it* is *repaying interest* on the
+debt you took to move fast ([technical-debt](../concepts/technical-debt.md)).
 *Quality is not a moral position, it is a *throughput* strategy.*
 
 ## The key people
