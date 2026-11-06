@@ -81,5 +81,5 @@ verified against the book before anyone cites them.
 A lint pass found no orphan pages and no broken relative links among the new
 files. It also surfaced problems that predate this ingest and were left
 unchanged: several lines in `index.md` have malformed link syntax (for example
-the Domain-Driven Design and Robert Martin entries), and some existing pages
+the [Domain-Driven Design](../concepts/domain-driven-design.md) and Robert Martin entries), and some existing pages
 contain stray emphasis markers. These are recorded here for a separate cleanup.

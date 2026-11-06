@@ -2,7 +2,7 @@
 title: Don't Repeat Yourself (DRY)
 tags: [dry, code-quality, craftsmanship, refactoring]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-11-06
 sources: [sources/clean-code-review.md, sources/fowler-refactoring.md]
 layout: default
 parent: Concepts
@@ -59,3 +59,12 @@ horses; over-mate either and the system buckles.
 ## Maps of Content
 
 - [Code Quality](../pages/code-quality.md)
+
+## See also
+
+- [SOLID](solid.md)
+- [Keep It Simple (KISS)](kiss.md)
+- [You Aren't Gonna Need It (YAGNI)](yagni.md)
+- [Clean Code](clean-code.md)
+- [Code Smells](code-smells.md)
+- [Refactoring](refactoring.md)

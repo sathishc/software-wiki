@@ -104,3 +104,11 @@ and forget to model its delay cost, which is the rate at which that value
 falls away. A third common error is to use WSJF with duration estimates that
 are much less reliable than the value estimates, which lets a guess about
 size dominate the decision.
+
+## See also
+
+- [Batch Size](batch-size.md)
+- [Work-in-Progress (WIP) Limits](wip-limits.md)
+- [Little's Law](littles-law.md)
+- [Queueing & Utilization](queueing-and-utilization.md)
+- [DORA Metrics](dora-metrics.md)

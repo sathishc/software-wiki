@@ -80,3 +80,11 @@ The repository is one of the [ports](./ports-and-adapters.md) of the
 architecture, and the [Unit of Work](./unit-of-work.md) usually manages the
 transaction that the repository's changes belong to. See also
 [Architecture & Design](../pages/architecture.md).
+
+## See also
+
+- [Aggregate](aggregate.md)
+- [Unit of Work](unit-of-work.md)
+- [Ports and Adapters (Hexagonal Architecture)](ports-and-adapters.md)
+- [Dependency Injection](dependency-injection.md)
+- [Domain-Driven Design (DDD)](domain-driven-design.md)

@@ -96,3 +96,11 @@ Added worked examples, "when not to use it" and "common mistakes" sections to
 `concepts/repository-pattern.md`, `concepts/service-layer.md`, `concepts/unit-of-work.md`,
 `concepts/aggregate.md`, `concepts/domain-events.md`, `concepts/ports-and-adapters.md`,
 `concepts/dependency-injection.md`, and `concepts/cqrs.md`. Updated their `updated` dates.
+
+## [2026-11-06] refactor | Cross-connection pass across concepts, people and maps
+
+Linked the first unlinked mention of each known concept or person on every concept,
+person and map page (eight new inline links, mostly in the Reinertsen and Domain-Driven Design
+pages). Added a "See also" section to 33 concept and person pages, listing related pages
+that the page did not already link. Sources were left unchanged, since they are immutable.
+Updated `updated` dates on the 45 changed pages.

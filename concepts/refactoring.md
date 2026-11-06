@@ -2,7 +2,7 @@
 title: Refactoring
 tags: [refactoring, code-quality, code-smells, technical-debt]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-11-06
 sources: [sources/fowler-refactoring.md, sources/feathers-legacy-code.md]
 layout: default
 parent: Concepts
@@ -72,3 +72,12 @@ code to write tests.
 
 - [Code Quality](../pages/code-quality.md)
 - [Testing & Quality](../pages/testing.md)
+
+## See also
+
+- [Code Smells](code-smells.md)
+- [Technical Debt](technical-debt.md)
+- [Unit Testing](unit-testing.md)
+- [Test-Driven Development (TDD)](tdd.md)
+- [Clean Code](clean-code.md)
+- [SOLID](solid.md)

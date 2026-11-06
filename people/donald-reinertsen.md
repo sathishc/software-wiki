@@ -45,3 +45,7 @@ map. They also connect to the software-delivery work of
 [Martin Fowler](./martin-fowler.md) and [Kent Beck](./kent-beck.md) on small
 changes and fast feedback, and to the [DORA Metrics](../concepts/dora-metrics.md)
 research that tested similar claims empirically in software.
+
+## See also
+
+- [Little's Law](../concepts/littles-law.md)

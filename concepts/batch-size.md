@@ -96,3 +96,12 @@ produces many tiny batches that each cost more than they save.
 [Cost of Delay](./cost-of-delay.md) explains why waiting is expensive, and
 [Work-in-Progress Limits](./wip-limits.md) is the complementary lever that
 constrains how much is in flight at once.
+
+## See also
+
+- [Cost of Delay](cost-of-delay.md)
+- [Work-in-Progress (WIP) Limits](wip-limits.md)
+- [Little's Law](littles-law.md)
+- [Continuous Integration & Continuous Delivery (CI/CD)](ci-cd.md)
+- [DORA Metrics](dora-metrics.md)
+- [Queueing & Utilization](queueing-and-utilization.md)

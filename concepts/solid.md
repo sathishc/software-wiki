@@ -2,7 +2,7 @@
 title: SOLID
 tags: [solid, oop, architecture, design-patterns, code-quality]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-11-06
 sources: [sources/clean-code-review.md, sources/gang-of-four.md]
 layout: default
 parent: Concepts
@@ -58,3 +58,12 @@ They are the *why* behind much of [Refactoring](./refactoring.md) — "extract t
 
 - [Code Quality](../pages/code-quality.md)
 - [Architecture & Design](../pages/architecture.md)
+
+## See also
+
+- [Dependency Injection](dependency-injection.md)
+- [Refactoring](refactoring.md)
+- [Design Patterns](design-patterns.md)
+- [Clean Code](clean-code.md)
+- [Don't Repeat Yourself (DRY)](dry.md)
+- [Code Smells](code-smells.md)

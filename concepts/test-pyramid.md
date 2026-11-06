@@ -2,7 +2,7 @@
 title: Test Pyramid
 tags: [test-pyramid, testing, quality, tdd, observability]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-11-06
 sources: [sources/beck-xp-tdd.md, sources/fowler-ci-cd.md]
 layout: default
 parent: Concepts
@@ -11,7 +11,7 @@ parent: Concepts
 # Test Pyramid
 
 The **test pyramid** (attributed to Ham Vervloet; popularised as the
-"test pyramid" by Robert C. "Uncle Bob" Martin, 2011) is a *proportional*
+"test pyramid" by Robert C. "[Uncle Bob](../people/robert-martin.md)" Martin, 2011) is a *proportional*
 model of a test suite. The claim: a healthy suite has a **broad base of fast unit tests**, a
 narrower middle of *integration* tests, and a **small tip of slow end-to-end
 (E2E) tests.**
@@ -60,3 +60,10 @@ your testing budget so the *total* feedback stays fast even as the suite grows.
 ## Maps of Content
 
 - [Testing & Quality](../pages/testing.md)
+
+## See also
+
+- [Unit Testing](unit-testing.md)
+- [Test-Driven Development (TDD)](tdd.md)
+- [Continuous Integration & Continuous Delivery (CI/CD)](ci-cd.md)
+- [Service Layer](service-layer.md)

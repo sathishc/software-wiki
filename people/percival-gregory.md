@@ -41,3 +41,8 @@ with the design material in [Architecture & Design](../pages/architecture.md).
 It sits downstream of [Eric Evans](./eric-evans.md)'s model-driven design, and
 it provides concrete code for the [bounded context](../concepts/bounded-context.md)
 and [microservices](../concepts/microservices.md) ideas.
+
+## See also
+
+- [CQRS (Command Query Responsibility Segregation)](../concepts/cqrs.md)
+- [Eric Evans](eric-evans.md)

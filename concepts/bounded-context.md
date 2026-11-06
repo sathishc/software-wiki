@@ -2,7 +2,7 @@
 title: Bounded Context
 tags: [bounded-context, domain-driven-design, architecture]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-11-06
 sources: [sources/evans-ddd.md]
 layout: default
 parent: Concepts
@@ -59,3 +59,12 @@ you a *domain-derived* reason to cut a service boundary, instead of an
 ## Maps of Content
 
 - [Architecture & Design](../pages/architecture.md)
+
+## See also
+
+- [Domain-Driven Design (DDD)](domain-driven-design.md)
+- [Ubiquitous Language](ubiquitous-language.md)
+- [Aggregate](aggregate.md)
+- [Microservices](microservices.md)
+- [Monolith](monolith.md)
+- [API Design](api-design.md)

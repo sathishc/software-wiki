@@ -2,7 +2,7 @@
 title: Observability
 tags: [observability, devops, delivery, deployment, testing]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-11-06
 sources: [sources/fowler-ci-cd.md]
 layout: default
 parent: Concepts
@@ -62,3 +62,10 @@ continuously: **fast delivery without observability is fast *breakage*.**
 ## Maps of Content
 
 - [Delivery](../pages/delivery.md)
+
+## See also
+
+- [DORA Metrics](dora-metrics.md)
+- [Continuous Integration & Continuous Delivery (CI/CD)](ci-cd.md)
+- [Microservices](microservices.md)
+- [Monolith](monolith.md)

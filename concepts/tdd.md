@@ -2,7 +2,7 @@
 title: Test-Driven Development (TDD)
 tags: [tdd, testing, quality, xp, refactoring]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-11-06
 sources: [sources/beck-xp-tdd.md]
 layout: default
 parent: Concepts
@@ -60,3 +60,12 @@ discipline:
 ## Maps of Content
 
 - [Testing & Quality](../pages/testing.md)
+
+## See also
+
+- [Unit Testing](unit-testing.md)
+- [Refactoring](refactoring.md)
+- [Test Pyramid](test-pyramid.md)
+- [Extreme Programming](xp.md)
+- [Ports and Adapters (Hexagonal Architecture)](ports-and-adapters.md)
+- [Clean Code](clean-code.md)

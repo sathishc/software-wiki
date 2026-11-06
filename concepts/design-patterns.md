@@ -2,7 +2,7 @@
 title: Design Patterns
 tags: [design-patterns, architecture, oop, gang-of-four]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-11-06
 sources: [sources/gang-of-four.md, sources/fowler-refactoring.md]
 layout: default
 parent: Concepts
@@ -67,3 +67,11 @@ the part that actually matters. The modern caveats:
 ## Maps of Content
 
 - [Architecture & Design](../pages/architecture.md)
+
+## See also
+
+- [SOLID](solid.md)
+- [Refactoring](refactoring.md)
+- [Dependency Injection](dependency-injection.md)
+- [Ports and Adapters (Hexagonal Architecture)](ports-and-adapters.md)
+- [Repository Pattern](repository-pattern.md)

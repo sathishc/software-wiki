@@ -2,7 +2,7 @@
 title: Kent Beck
 tags: [person, tdd, xp, testing, agile]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-11-06
 sources: [sources/beck-xp-tdd.md, sources/fowler-refactoring.md]
 layout: default
 parent: People
@@ -61,3 +61,9 @@ team version of the same idea.
 
 - [Testing & Quality](../pages/testing.md)
 - [Delivery](../pages/delivery.md)
+
+## See also
+
+- [Extreme Programming](../concepts/xp.md)
+- [Martin Fowler](martin-fowler.md)
+- [Robert C. "Uncle Bob" Martin](robert-martin.md)

@@ -11,7 +11,7 @@ parent: Concepts
 # Queueing & Utilization
 
 In product development, work spends most of its life **waiting**, not being
-worked on. Reinertsen's core diagnostic is that the queue, not the worker, is
+worked on. [Reinertsen](../people/donald-reinertsen.md)'s core diagnostic is that the queue, not the worker, is
 where most of the economic damage happens. Every item in a queue accrues
 [cost of delay](./cost-of-delay.md), and the queue's length is what determines
 how long each item waits.
@@ -97,3 +97,10 @@ utilisation up, which raises queue size and cycle time together. A second is
 to add people to a queue that is limited by a single approval step; the queue
 stays the same length, but now more people wait. A third is to treat a small
 queue as proof of health without checking the age of the items in it.
+
+## See also
+
+- [Little's Law](littles-law.md)
+- [Work-in-Progress (WIP) Limits](wip-limits.md)
+- [Batch Size](batch-size.md)
+- [Cost of Delay](cost-of-delay.md)

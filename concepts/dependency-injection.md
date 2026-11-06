@@ -77,3 +77,12 @@ Injection is the way [Unit Testing](./unit-testing.md) gets its fakes, and the
 [repository](./repository-pattern.md) and [unit of work](./unit-of-work.md) are
 typically the first dependencies passed in. See [Design Patterns](./design-patterns.md)
 for the wider family of decoupling patterns.
+
+## See also
+
+- [Ports and Adapters (Hexagonal Architecture)](ports-and-adapters.md)
+- [Service Layer](service-layer.md)
+- [Unit Testing](unit-testing.md)
+- [Repository Pattern](repository-pattern.md)
+- [SOLID](solid.md)
+- [Design Patterns](design-patterns.md)

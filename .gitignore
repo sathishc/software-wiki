@@ -6,3 +6,6 @@ vendor/
 .DS_Store
 *.gem
 .obsidian/
+
+# FUSE temp files created when an open file is deleted on the mounted filesystem
+.fuse_hidden*

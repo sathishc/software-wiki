@@ -2,7 +2,7 @@
 title: Functional Programming
 tags: [functional-programming, architecture, design-patterns]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-11-06
 sources: [sources/fowler-refactoring.md]
 layout: default
 parent: Concepts
@@ -73,3 +73,9 @@ Take the *ideas* (purity, immutability, composition) — not the *culture*
 - [Unit Testing](./unit-testing.md) — purity is what makes tests trivial
 - [Refactoring](./refactoring.md) — referential transparency = safe transformation steps
 - [Code Quality](../pages/code-quality.md) — this map
+
+## See also
+
+- [Unit Testing](unit-testing.md)
+- [Design Patterns](design-patterns.md)
+- [Clean Code](clean-code.md)

@@ -76,3 +76,10 @@ Opening a new unit of work for every repository call defeats its purpose.
 Committing inside the domain model moves the transaction boundary out of the
 service layer, where it is hard to see. A third mistake is to ignore failure
 paths, so that rollback is never exercised and nobody knows whether it works.
+
+## See also
+
+- [Repository Pattern](repository-pattern.md)
+- [Service Layer](service-layer.md)
+- [Aggregate](aggregate.md)
+- [Domain Events](domain-events.md)

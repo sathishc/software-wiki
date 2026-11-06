@@ -91,3 +91,10 @@ team is busy, which is exactly the situation the limit was meant to prevent.
 
 [Cost of Delay](./cost-of-delay.md) gives the economic reason to limit WIP, and
 [Delivery](../pages/delivery.md) covers the delivery-side view.
+
+## See also
+
+- [Little's Law](littles-law.md)
+- [Queueing & Utilization](queueing-and-utilization.md)
+- [Batch Size](batch-size.md)
+- [Cost of Delay](cost-of-delay.md)

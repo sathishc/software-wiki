@@ -86,3 +86,12 @@ redelivered.
 Event-driven designs are the basis of many [Microservices](./microservices.md),
 and they are the tool for splitting work across [bounded contexts](./bounded-context.md).
 See also [Architecture & Design](../pages/architecture.md).
+
+## See also
+
+- [Aggregate](aggregate.md)
+- [CQRS (Command Query Responsibility Segregation)](cqrs.md)
+- [Microservices](microservices.md)
+- [Unit of Work](unit-of-work.md)
+- [Service Layer](service-layer.md)
+- [Bounded Context](bounded-context.md)

@@ -2,7 +2,7 @@
 title: Keep It Simple (KISS)
 tags: [kiss, simplicity, code-quality, craftsmanship]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-11-06
 sources: [sources/clean-code-review.md]
 layout: default
 parent: Concepts
@@ -60,3 +60,10 @@ is a KISS function.
 ## Maps of Content
 
 - [Code Quality](../pages/code-quality.md)
+
+## See also
+
+- [You Aren't Gonna Need It (YAGNI)](yagni.md)
+- [Don't Repeat Yourself (DRY)](dry.md)
+- [Clean Code](clean-code.md)
+- [Code Smells](code-smells.md)

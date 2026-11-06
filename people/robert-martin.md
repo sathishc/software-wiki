@@ -2,7 +2,7 @@
 title: Robert C. "Uncle Bob" Martin
 tags: [person, clean-code, solid, code-quality, craftsmanship]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-11-06
 sources: [sources/clean-code-review.md]
 layout: default
 parent: People
@@ -56,3 +56,8 @@ junior developer to first.
 
 - [Code Quality](../pages/code-quality.md)
 - [Testing & Quality](../pages/testing.md)
+
+## See also
+
+- [Test Pyramid](../concepts/test-pyramid.md)
+- [Kent Beck](kent-beck.md)

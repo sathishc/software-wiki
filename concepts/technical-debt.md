@@ -2,7 +2,7 @@
 title: Technical Debt
 tags: [technical-debt, code-quality, refactoring, craftsmanship]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-11-06
 sources: [sources/feathers-legacy-code.md, sources/fowler-refactoring.md, sources/clean-code-review.md]
 layout: default
 parent: Concepts
@@ -68,3 +68,10 @@ modes matter:
 ## Maps of Content
 
 - [Code Quality](../pages/code-quality.md)
+
+## See also
+
+- [Refactoring](refactoring.md)
+- [Code Smells](code-smells.md)
+- [Clean Code](clean-code.md)
+- [Code Review](code-review.md)

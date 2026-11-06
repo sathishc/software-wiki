@@ -2,7 +2,7 @@
 title: Code Review
 tags: [code-review, quality, craftsmanship, ci-cd, delivery]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-11-06
 sources: [sources/clean-code-review.md, sources/fowler-ci-cd.md]
 layout: default
 parent: Concepts
@@ -65,3 +65,12 @@ shape that high-performing teams converge on:
 
 - [Code Quality](../pages/code-quality.md)
 - [Delivery](../pages/delivery.md)
+
+## See also
+
+- [Continuous Integration & Continuous Delivery (CI/CD)](ci-cd.md)
+- [Clean Code](clean-code.md)
+- [DORA Metrics](dora-metrics.md)
+- [Batch Size](batch-size.md)
+- [Queueing & Utilization](queueing-and-utilization.md)
+- [Technical Debt](technical-debt.md)

@@ -2,7 +2,7 @@
 title: Domain-Driven Design (DDD)
 tags: [domain-driven-design, architecture, modeling]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-11-06
 sources: [sources/evans-ddd.md]
 layout: default
 parent: Concepts
@@ -44,7 +44,7 @@ systems, *the hard part is not the technology, it is the model.*
 - **Tactical DDD** — how to model *within* a context: **Entities** (have
   identity), **Value Objects** (immutable, defined by attributes), **Aggregates**
   (a unit of consistency with a single root), plus Repositories, Factories,
-  Domain Services, and Domain Events.
+  Domain Services, and [Domain Events](domain-events.md).
 
 ## When DDD is worth it
 
@@ -70,3 +70,12 @@ drawing it enables.
 ## Maps of Content
 
 - [Architecture & Design](../pages/architecture.md)
+
+## See also
+
+- [Bounded Context](bounded-context.md)
+- [Ubiquitous Language](ubiquitous-language.md)
+- [Aggregate](aggregate.md)
+- [Repository Pattern](repository-pattern.md)
+- [Service Layer](service-layer.md)
+- [Microservices](microservices.md)

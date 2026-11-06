@@ -2,7 +2,7 @@
 title: Microservices
 tags: [microservices, architecture, monolith, deployment]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-11-06
 sources: [sources/evans-ddd.md, sources/fowler-ci-cd.md]
 layout: default
 parent: Concepts
@@ -52,7 +52,7 @@ have a **distributed system**, which means you must *earn* back:
 **The honest rule of thumb:** *start as a [Monolith](./monolith.md) and extract a service
 when you have a *reason* — an independent scaling/ownership/deployment need —
 not when "microservices" is the default.* The boundary should be *domain-driven*
-(DDD), because a domain boundary is the only one that's *stable and meaningful*.
+([DDD](domain-driven-design.md)), because a domain boundary is the only one that's *stable and meaningful*.
 
 ## Related Pages
 
@@ -70,3 +70,13 @@ not when "microservices" is the default.* The boundary should be *domain-driven*
 
 - [Architecture & Design](../pages/architecture.md)
 - [Delivery](../pages/delivery.md)
+
+## See also
+
+- [Monolith](monolith.md)
+- [Bounded Context](bounded-context.md)
+- [Domain Events](domain-events.md)
+- [API Design](api-design.md)
+- [Continuous Integration & Continuous Delivery (CI/CD)](ci-cd.md)
+- [DORA Metrics](dora-metrics.md)
+- [CQRS (Command Query Responsibility Segregation)](cqrs.md)

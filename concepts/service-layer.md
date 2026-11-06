@@ -78,3 +78,12 @@ ties the use case to one adapter.
 Service functions receive their dependencies through [dependency injection](./dependency-injection.md).
 Their side effects, such as published [domain events](./domain-events.md), are
 where event-driven behaviour starts. See also [Architecture & Design](../pages/architecture.md).
+
+## See also
+
+- [Unit of Work](unit-of-work.md)
+- [Repository Pattern](repository-pattern.md)
+- [Domain Events](domain-events.md)
+- [CQRS (Command Query Responsibility Segregation)](cqrs.md)
+- [Dependency Injection](dependency-injection.md)
+- [Ports and Adapters (Hexagonal Architecture)](ports-and-adapters.md)

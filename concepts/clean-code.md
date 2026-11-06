@@ -2,7 +2,7 @@
 title: Clean Code
 tags: [clean-code, code-quality, craftsmanship, solid]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-11-06
 sources: [sources/clean-code-review.md]
 layout: default
 parent: Concepts
@@ -56,3 +56,13 @@ Clean Code is the *reading* half.
 ## Maps of Content
 
 - [Code Quality](../pages/code-quality.md)
+
+## See also
+
+- [Refactoring](refactoring.md)
+- [Code Smells](code-smells.md)
+- [SOLID](solid.md)
+- [Don't Repeat Yourself (DRY)](dry.md)
+- [Keep It Simple (KISS)](kiss.md)
+- [You Aren't Gonna Need It (YAGNI)](yagni.md)
+- [Code Review](code-review.md)

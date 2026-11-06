@@ -2,7 +2,7 @@
 title: Continuous Integration & Continuous Delivery (CI/CD)
 tags: [ci-cd, devops, delivery, deployment, testing]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-11-06
 sources: [sources/fowler-ci-cd.md]
 layout: default
 parent: Concepts
@@ -73,3 +73,12 @@ working.
 ## Maps of Content
 
 - [Delivery](../pages/delivery.md)
+
+## See also
+
+- [DORA Metrics](dora-metrics.md)
+- [Batch Size](batch-size.md)
+- [Observability](observability.md)
+- [Code Review](code-review.md)
+- [Test Pyramid](test-pyramid.md)
+- [Test-Driven Development (TDD)](tdd.md)

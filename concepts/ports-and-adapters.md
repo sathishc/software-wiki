@@ -80,3 +80,12 @@ the real behaviour the port is supposed to isolate.
 Ports are wired together by [dependency injection](./dependency-injection.md).
 See also [Architecture & Design](../pages/architecture.md) and [Monolith](./monolith.md),
 which the pattern lets you keep well-structured as a single deployable.
+
+## See also
+
+- [Dependency Injection](dependency-injection.md)
+- [Repository Pattern](repository-pattern.md)
+- [Service Layer](service-layer.md)
+- [Unit Testing](unit-testing.md)
+- [Test-Driven Development (TDD)](tdd.md)
+- [Domain-Driven Design (DDD)](domain-driven-design.md)

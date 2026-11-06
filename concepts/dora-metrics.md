@@ -2,7 +2,7 @@
 title: DORA Metrics
 tags: [dora, devops, delivery, ci-cd, observability]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-11-06
 sources: [sources/fowler-ci-cd.md]
 layout: default
 parent: Concepts
@@ -65,3 +65,11 @@ system (small batches, fast feedback, automated pipelines, [Observability](./obs
 ## Maps of Content
 
 - [Delivery](../pages/delivery.md)
+
+## See also
+
+- [Continuous Integration & Continuous Delivery (CI/CD)](ci-cd.md)
+- [Observability](observability.md)
+- [Batch Size](batch-size.md)
+- [Cost of Delay](cost-of-delay.md)
+- [Code Review](code-review.md)

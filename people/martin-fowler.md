@@ -2,7 +2,7 @@
 title: Martin Fowler
 tags: [person, refactoring, architecture, domain-driven-design, ci-cd, code-quality]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-11-06
 sources: [sources/fowler-refactoring.md, sources/evans-ddd.md, sources/fowler-ci-cd.md]
 layout: default
 parent: People
@@ -28,8 +28,8 @@ pattern *communicable*.
 
 | Work | Year | Contribution |
 |---|---|---|
-| *Refactoring* (with Kent Beck) | 2001 | The catalogue of behaviour-preserving refactorings |
-| *Patterns of Enterprise Application Architecture* | 2000 | POEAA — MVC, front controller, service layer |
+| *Refactoring* (with [Kent Beck](kent-beck.md)) | 2001 | The catalogue of behaviour-preserving refactorings |
+| *Patterns of Enterprise Application Architecture* | 2000 | POEAA — MVC, front controller, [service layer](../concepts/service-layer.md) |
 | *The Pragmatic Programmer*? no — see [Code Quality](../pages/code-quality.md) | — | — |
 | *martinfowler.com* bliki | 1999– | Hundreds of short, canonical essays (DDD, CI, CD) |
 
@@ -57,7 +57,7 @@ Fowler is the connective tissue: [Refactoring](../concepts/refactoring.md) links
 - [Continuous Integration/CD](../concepts/ci-cd.md)
 - [Domain-Driven Design](../concepts/domain-driven-design.md)
 - [Bounded Context](../concepts/bounded-context.md)
-- [Robert C. Martin](./robert-martin.md) — clean code, SOLID
+- [Robert C. Martin](./robert-martin.md) — clean code, [SOLID](../concepts/solid.md)
 
 ## Sources
 
@@ -70,3 +70,8 @@ Fowler is the connective tissue: [Refactoring](../concepts/refactoring.md) links
 - [Code Quality](../pages/code-quality.md)
 - [Architecture & Design](../pages/architecture.md)
 - [Delivery](../pages/delivery.md)
+
+## See also
+
+- [Eric Evans](eric-evans.md)
+- [Microservices](../concepts/microservices.md)

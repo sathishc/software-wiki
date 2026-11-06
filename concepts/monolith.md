@@ -2,7 +2,7 @@
 title: Monolith
 tags: [monolith, architecture, microservices, deployment]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-11-06
 sources: [sources/evans-ddd.md]
 layout: default
 parent: Concepts
@@ -61,3 +61,10 @@ boundary is *meaningful*.
 ## Maps of Content
 
 - [Architecture & Design](../pages/architecture.md)
+
+## See also
+
+- [Microservices](microservices.md)
+- [Bounded Context](bounded-context.md)
+- [Ports and Adapters (Hexagonal Architecture)](ports-and-adapters.md)
+- [Continuous Integration & Continuous Delivery (CI/CD)](ci-cd.md)

@@ -2,7 +2,7 @@
 title: Eric Evans
 tags: [person, domain-driven-design, architecture, modeling]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-11-06
 sources: [sources/evans-ddd.md]
 layout: default
 parent: People
@@ -58,3 +58,9 @@ technical/infrastructure-driven architecture.
 ## Maps of Content
 
 - [Architecture & Design](../pages/architecture.md)
+
+## See also
+
+- [Aggregate](../concepts/aggregate.md)
+- [Martin Fowler](martin-fowler.md)
+- [Harry Percival & Bob Gregory](percival-gregory.md)

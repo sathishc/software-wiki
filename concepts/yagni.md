@@ -2,7 +2,7 @@
 title: You Aren't Gonna Need It (YAGNI)
 tags: [yagni, simplicity, code-quality, tdd]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-11-06
 sources: [sources/clean-code-review.md, sources/beck-xp-tdd.md]
 layout: default
 parent: Concepts
@@ -56,3 +56,10 @@ mechanical, and refactoring is the safe way to generalise later.
 ## Maps of Content
 
 - [Code Quality](../pages/code-quality.md)
+
+## See also
+
+- [Keep It Simple (KISS)](kiss.md)
+- [Don't Repeat Yourself (DRY)](dry.md)
+- [Extreme Programming](xp.md)
+- [Refactoring](refactoring.md)

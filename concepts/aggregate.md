@@ -75,3 +75,13 @@ change several aggregates in one transaction because it is convenient, which
 brings back the coupling the boundary was meant to prevent. A third is to let
 code reach into an aggregate's children and change them directly, which skips
 the root's rules.
+
+## See also
+
+- [Domain-Driven Design (DDD)](domain-driven-design.md)
+- [Ubiquitous Language](ubiquitous-language.md)
+- [Bounded Context](bounded-context.md)
+- [Repository Pattern](repository-pattern.md)
+- [Unit of Work](unit-of-work.md)
+- [Domain Events](domain-events.md)
+- [Service Layer](service-layer.md)

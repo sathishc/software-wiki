@@ -2,7 +2,7 @@
 title: Code Smells
 tags: [code-smells, code-quality, refactoring]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-11-06
 sources: [sources/fowler-refactoring.md]
 layout: default
 parent: Concepts
@@ -59,3 +59,11 @@ author's over-familiarity hid.
 ## Maps of Content
 
 - [Code Quality](../pages/code-quality.md)
+
+## See also
+
+- [Refactoring](refactoring.md)
+- [Technical Debt](technical-debt.md)
+- [Clean Code](clean-code.md)
+- [SOLID](solid.md)
+- [Don't Repeat Yourself (DRY)](dry.md)

@@ -2,7 +2,7 @@
 title: Extreme Programming
 tags: [xp, agile, testing, tdd, delivery]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-11-06
 sources: [sources/beck-xp-tdd.md]
 layout: default
 parent: Concepts
@@ -72,3 +72,12 @@ posture*, not a scaling theory — the delivery map
 - [CI/CD](./ci-cd.md) — the continuous-integration generalisation
 - [Code Review](./code-review.md) — the review practice that replaced "pairs always"
 - [DORA Metrics](./dora-metrics.md) — the measured payoff of XP's delivery discipline
+
+## See also
+
+- [Test-Driven Development (TDD)](tdd.md)
+- [Refactoring](refactoring.md)
+- [Continuous Integration & Continuous Delivery (CI/CD)](ci-cd.md)
+- [Unit Testing](unit-testing.md)
+- [You Aren't Gonna Need It (YAGNI)](yagni.md)
+- [Code Review](code-review.md)

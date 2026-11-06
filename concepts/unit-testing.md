@@ -2,7 +2,7 @@
 title: Unit Testing
 tags: [unit-testing, testing, quality, tdd]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-11-06
 sources: [sources/beck-xp-tdd.md, sources/feathers-legacy-code.md]
 layout: default
 parent: Concepts
@@ -69,3 +69,11 @@ Unit testing is the *enabler* the rest of the wiki rests on:
 ## Maps of Content
 
 - [Testing & Quality](../pages/testing.md)
+
+## See also
+
+- [Test-Driven Development (TDD)](tdd.md)
+- [Test Pyramid](test-pyramid.md)
+- [Refactoring](refactoring.md)
+- [Dependency Injection](dependency-injection.md)
+- [Ports and Adapters (Hexagonal Architecture)](ports-and-adapters.md)

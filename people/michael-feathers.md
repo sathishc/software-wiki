@@ -2,7 +2,7 @@
 title: Michael Feathers
 tags: [person, technical-debt, refactoring, legacy-code]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-11-06
 sources: [sources/feathers-legacy-code.md]
 layout: default
 parent: People
@@ -65,3 +65,7 @@ counterweight to the greenfield idealism of [Kent Beck](./kent-beck.md) and the 
 
 - [Code Quality](../pages/code-quality.md)
 - [Testing & Quality](../pages/testing.md)
+
+## See also
+
+- [Test-Driven Development (TDD)](../concepts/tdd.md)

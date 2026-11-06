@@ -2,7 +2,7 @@
 title: API Design
 tags: [api-design, architecture, design-patterns, microservices]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-11-06
 sources: [sources/gang-of-four.md, sources/fowler-ci-cd.md]
 layout: default
 parent: Concepts
@@ -68,3 +68,12 @@ later. The [Bounded Context](./bounded-context.md) is the unit: *each context ex
 ## Maps of Content
 
 - [Architecture & Design](../pages/architecture.md)
+
+## See also
+
+- [Microservices](microservices.md)
+- [CQRS (Command Query Responsibility Segregation)](cqrs.md)
+- [Bounded Context](bounded-context.md)
+- [Design Patterns](design-patterns.md)
+- [Ports and Adapters (Hexagonal Architecture)](ports-and-adapters.md)
+- [Monolith](monolith.md)
