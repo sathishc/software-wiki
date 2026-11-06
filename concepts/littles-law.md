@@ -43,6 +43,47 @@ window. It describes averages, not individual items, and it does not tell you
 which bottleneck to fix. For that, the [queueing](./queueing-and-utilization.md)
 and [batch size](./batch-size.md) arguments are needed.
 
+## Worked example
+
+A support team closes about 12 tickets a week, which is its throughput. At any
+moment about 36 tickets are open, which is its work in progress. Little's Law
+gives the average time each ticket spends open: 36 ÷ 12 = 3 weeks. If the team
+wants a two-week average, it does not need to work faster. It needs to hold
+about 24 tickets open at a time. The same arithmetic lets a manager estimate
+the effect of a process change before making it, using only the current
+throughput and the proposed change in open work.
+
+## Preconditions
+
+The law applies to a system in a steady state, where the amount of work in the
+system is roughly stable over the period being measured. If work is piling up
+faster than it is completed, the averages drift and the relationship gives
+misleading answers. It applies to averages, not to individual items, and it
+holds regardless of the order in which items are processed or how they arrive,
+which is what makes it so widely useful.
+
+## Applying it to a part of the system
+
+Because the law is about any stable system, it can be applied to a single stage.
+A review stage with a steady throughput and a known number of items waiting
+gives its own cycle time. This is often the most useful use of the law, since
+it identifies which stage is holding work the longest.
+
+## When not to use it
+
+When work arrives in bursts, or the system is growing, the steady-state
+assumption fails and the numbers should be read with caution. The law also
+does not say which stage to change; it only describes the relationship. For
+that, the [queueing](./queueing-and-utilization.md) and
+[batch size](./batch-size.md) arguments are needed.
+
+## Common mistakes
+
+A frequent error is to measure throughput over a short window during a burst
+and then apply it to a long-run plan. Another is to mix definitions, counting
+"in progress" in one place and "in the system" in another, which makes the
+arithmetic appear to disagree with itself.
+
 ## Related
 
 [Cost of Delay](./cost-of-delay.md) shows what the extra cycle time costs, and the

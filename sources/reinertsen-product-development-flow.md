@@ -1,6 +1,6 @@
 ---
 title: "The Principles of Product Development Flow — Donald G. Reinertsen (2009)"
-tags: [sources, lean, flow, economics, queueing, cost-of-delay, batch-size, wip, donald-reinertsen]
+tags: [sources, lean, flow, economics, queueing, donald-reinertsen]
 source: "Book (Celeritas Publishing, 2009); secondary summaries consulted 2026-11-06"
 ingested: 2026-11-06
 ---

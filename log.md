@@ -70,3 +70,29 @@ text), a people page (`people/percival-gregory.md`), and eight concept pages:
 `concepts/ports-and-adapters.md`, `concepts/dependency-injection.md`, and
 `concepts/cqrs.md`. Added a synthesis section to `pages/architecture.md` and
 index entries in `index.md`. No new tags were needed.
+
+## [2026-11-06] lint | Health check before expansion
+
+Reported before mutating. Findings: no orphan pages (every page has at least two inbound
+files); no broken relative links in the wiki (only `../sat-wiki/README.md`, a sibling repo
+not present in this checkout, and example links inside `CLAUDE.md`); index entries and
+files match one-to-one; no page over ~200 lines; every page has frontmatter.
+Fixed: six malformed link fragments in `index.md` (Domain-Driven Design, Clean Code,
+Robert-Martin, Kent Beck, TDD, Ubiquitous Language); non-canonical topic tags removed from
+`concepts/cost-of-delay.md`, `concepts/queueing-and-utilization.md` and
+`sources/reinertsen-product-development-flow.md`; Architecture & Design index section
+sorted alphabetically.
+Not fixed, for your decision: stray emphasis markers in `pages/delivery.md` (11 lines),
+`pages/architecture.md` (3), `pages/code-quality.md` (2) and `concepts/dora-metrics.md` (1),
+which need a rewrite rather than a mechanical fix; truncated index descriptions ending in an
+ellipsis; a stray fragment in `concepts/functional-programming.md` ("two core moves:.");
+33 older pages whose `updated` date predates today but whose content may still be correct.
+
+## [2026-11-06] refactor | Expanded 13 concept pages from Lean and Architecture Patterns ingests
+
+Added worked examples, "when not to use it" and "common mistakes" sections to
+`concepts/cost-of-delay.md`, `concepts/queueing-and-utilization.md`,
+`concepts/batch-size.md`, `concepts/wip-limits.md`, `concepts/littles-law.md`,
+`concepts/repository-pattern.md`, `concepts/service-layer.md`, `concepts/unit-of-work.md`,
+`concepts/aggregate.md`, `concepts/domain-events.md`, `concepts/ports-and-adapters.md`,
+`concepts/dependency-injection.md`, and `concepts/cqrs.md`. Updated their `updated` dates.

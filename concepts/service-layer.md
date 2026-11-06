@@ -40,6 +40,39 @@ layer is the main target for fast tests. The
 [Test Pyramid](./test-pyramid.md) relies on most behavioural tests being at
 this level, with a thin layer of end-to-end tests above it.
 
+## Worked example
+
+An "allocate order line" use case takes a command with an order id and a
+product sku. The service opens a unit of work, asks the batch repository for
+the batches holding that sku, calls the domain method that picks a batch and
+records the allocation, then commits. If no batch has enough stock, the domain
+records an out-of-stock event and the service returns a result the web layer
+can translate into a response. The service contains the sequence of steps and
+the transaction boundary, and nothing about HTTP, SQL or email.
+
+## What belongs in the service and what does not
+
+Business rules belong on the domain objects, so that they are enforced whichever
+entry point is used. The service decides what happens and in what order, which
+transactions to open, and which events to publish. A service function that
+contains a long chain of `if` statements describing pricing or eligibility has
+absorbed domain logic, and the domain model is probably too thin.
+
+## When not to use it
+
+For a single-endpoint application with no domain rules, a service layer adds
+ceremony without benefit. Once there are several entry points, such as a web
+API, a message consumer, and a scheduled job, the layer pays for itself because
+each entry point becomes a thin adapter over the same use case.
+
+## Common mistakes
+
+The most common error is an "anaemic" domain, where the service layer holds
+all the logic and the domain objects are plain data holders. Another is a
+service that calls other services in deep chains, which hides the transaction
+boundary. A third is returning web-specific responses from the service, which
+ties the use case to one adapter.
+
 ## Related
 
 Service functions receive their dependencies through [dependency injection](./dependency-injection.md).

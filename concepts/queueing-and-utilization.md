@@ -1,6 +1,6 @@
 ---
 title: Queueing & Utilization
-tags: [lean, flow, queueing, economics, variability]
+tags: [lean, flow, queueing, economics]
 created: 2026-11-06
 updated: 2026-11-06
 sources: [sources/reinertsen-product-development-flow.md]
@@ -56,3 +56,44 @@ is the bookkeeping that makes the queueing argument concrete.
 Long-lived branches, large merges, and review backlogs are queues. The
 [Delivery](../pages/delivery.md) map's preference for small, frequent changes is
 the same utilisation-and-queue argument applied to code.
+
+## Worked example
+
+For a single server with random arrivals and service times, the expected
+waiting time in the queue, relative to the average service time, grows with
+the factor ρ / (1 − ρ), where ρ is utilisation. At 50% busy the factor is 1.
+At 80% it is 4. At 90% it is 9. At 95% it is 19. So a team that moves from
+80% to 95% utilisation does not get 19% slower; its waiting time roughly
+quadruples relative to its service time. Nothing about the people changed.
+Only the amount of spare capacity did, and the queue absorbed the difference.
+
+## Why spare capacity is not waste
+
+A system with slack can absorb variability when it arrives. A system with
+none passes every irregular arrival straight into a queue, and the queue
+delays everything behind it. The apparent inefficiency of an idle engineer is
+the cost of keeping the queue short, which is usually far cheaper than the
+delay it prevents.
+
+## Diagnosing a queue
+
+Queues are visible if you look for them. Look for work that is "in review",
+"waiting for QA", "blocked on a dependency", or "ready for release" for days.
+Measure the age of items in each state rather than only their count. Where
+the age is large and the state is a handoff, the queue is probably the
+bottleneck, even if the people in that state look busy.
+
+## When not to use it
+
+The queueing argument assumes the system is not fully deterministic. A
+perfectly regular process with fixed arrival times and fixed durations has no
+queueing delay at full utilisation, so the exponential effect does not apply.
+It also says little about single items; it describes behaviour across many.
+
+## Common mistakes
+
+The most frequent error is to measure individual productivity and push
+utilisation up, which raises queue size and cycle time together. A second is
+to add people to a queue that is limited by a single approval step; the queue
+stays the same length, but now more people wait. A third is to treat a small
+queue as proof of health without checking the age of the items in it.

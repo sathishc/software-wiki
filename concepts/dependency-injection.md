@@ -39,6 +39,38 @@ Explicit injection can add boilerplate, and a large container framework can hide
 what is actually wired together. Keep the wiring visible and in one place, and
 avoid injecting things that never need to vary.
 
+## Worked example
+
+A `create_order` function accepts its repository and its notifier as arguments.
+In production, a bootstrap function constructs the SQL repository and the email
+notifier and passes them in. In a test, the same function receives an in-memory
+repository and a fake notifier, and the test calls it directly. The function
+itself never decides which implementation it uses, so the test exercises the
+same logic as production with only the outside world replaced.
+
+## Where the wiring lives
+
+Keep the construction of real objects in one place at the edge of the
+application, typically a bootstrap or composition root. Everything else asks
+for what it needs through its parameters. When the wiring is scattered, it is
+hard to tell what the application actually uses, and tests have to patch
+global state to swap implementations.
+
+## When not to use it
+
+Injecting something that will never vary, such as a pure function or a
+constant, adds parameters without benefit. Very small scripts may not justify
+a bootstrap step at all. A large container framework can also be overkill, and
+it can hide the dependency graph behind annotations that are hard to read.
+
+## Common mistakes
+
+Reaching for a global singleton inside a function defeats the purpose and
+makes tests order-dependent. A service locator, where code asks a registry for
+its dependencies at runtime, looks like injection but hides the dependencies
+from the function signature. Passing the entire application container into
+every function is the same problem in a different shape.
+
 ## Related
 
 Injection is the way [Unit Testing](./unit-testing.md) gets its fakes, and the

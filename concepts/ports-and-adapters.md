@@ -42,6 +42,39 @@ script. Its benefit grows with the number of external systems and the amount
 of domain logic. The risk is a port that mirrors a particular technology rather
 than the domain's needs, which leaks the technology back into the core.
 
+## Worked example
+
+An order service needs to send a confirmation. The core defines a port, a
+`Notifier` interface with a single `send` operation taking a recipient and a
+message. The production adapter wraps an email provider's client, and a
+different adapter could use SMS. In tests, a fake adapter records what it was
+asked to send, and the test checks the record. The core's code never imports
+the email library, so changing providers touches one adapter and no domain
+code.
+
+## Designing ports
+
+Define a port in terms of what the core needs, not in terms of a vendor's
+API. A port called `PaymentGateway` with `charge(amount, customer)` is better
+than one that mirrors a particular provider's endpoints and fields, because
+the vendor's shape then leaks into the domain. Keep ports small and focused.
+A port with forty methods is usually two or three ports that have been merged.
+
+## When not to use it
+
+For a script that talks to one database and has no domain rules, the pattern
+is more structure than the problem needs. Its value grows with the number of
+external systems and the amount of domain logic that must stay independent of
+them.
+
+## Common mistakes
+
+A port that is a thin wrapper around a vendor SDK offers no protection, since
+every caller still needs to know the vendor's semantics. Passing ORM objects or
+HTTP request objects through a port leaks infrastructure back into the core.
+Mocking every collaborator in a test, rather than using a simple fake, hides
+the real behaviour the port is supposed to isolate.
+
 ## Related
 
 Ports are wired together by [dependency injection](./dependency-injection.md).

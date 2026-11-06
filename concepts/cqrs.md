@@ -39,6 +39,45 @@ and where the domain's rules are complex enough to justify keeping them apart.
 It is overkill for a simple create-read-update-delete application. Applying it
 everywhere is a common mistake.
 
+## Worked example
+
+An order system has a write side that enforces rules through aggregates and
+the service layer. A customer's order-history page, however, needs to show
+hundreds of orders with totals and statuses, filtered and sorted. Loading
+aggregates to build that page would be slow and awkward. Instead, each order
+event updates a read table shaped exactly for the page. The page queries that
+table directly. Writes still go through the domain and its rules, and reads
+never change state.
+
+## Why the split helps
+
+The domain model is designed to protect invariants, which makes it a poor
+shape for reporting. Separating the two lets each side be optimised and
+evolved independently. The read model can be rebuilt from events if its
+design changes, which makes experimentation cheaper.
+
+## Consistency
+
+The read side is usually eventually consistent with the write side, so a user
+may briefly not see their own change. Teams handle this with UI choices, such
+as showing a pending state, or by reading from the write side for the item the
+user has just changed. The lag should be measured and monitored, not assumed to
+be negligible.
+
+## When not to use it
+
+For a create, read, update and delete application where reads and writes look
+alike, CQRS adds two models and a synchronisation mechanism for no benefit.
+Applying it everywhere is a common and costly mistake. It is best applied to a
+specific part of a system where the read and write needs diverge sharply.
+
+## Common mistakes
+
+Letting a query change state turns the read side into a second write path with
+no rules. Building read models without monitoring their lag hides stale data
+until a user reports it. Splitting into separate services before understanding
+the domain tends to produce distributed complexity with no clear gain.
+
 ## Related
 
 CQRS is often used with [Microservices](./microservices.md), where read models

@@ -42,3 +42,36 @@ owns them, and they should use the terms of the
 [ubiquitous language](./ubiquitous-language.md).
 
 See also [Architecture & Design](../pages/architecture.md).
+
+## Worked example
+
+A `Batch` aggregate holds a reference, a sku, and a quantity of available stock,
+along with the order lines allocated to it. Its `allocate` method refuses any
+line that would exceed the available quantity, and it raises an error rather
+than silently allocating too much. That rule can be enforced by the aggregate
+alone, in one transaction, because everything it needs is inside it. The
+aggregate is loaded, changed through its root, and saved as a whole.
+
+## Choosing boundaries
+
+Start with the invariant, not the data. Ask which rules must hold together
+at the moment of a commit, and put the objects those rules touch inside one
+aggregate. Keep the aggregate small enough to load and lock quickly. Reference
+other aggregates by identity rather than by holding them, so that no single
+transaction has to span the whole model.
+
+## When not to use it
+
+A simple entity with no invariants that span several objects does not need an
+aggregate. Forcing every table into an aggregate adds structure without
+protecting anything. The concept is most useful where a real business rule
+has to be true at all times.
+
+## Common mistakes
+
+A common error is to make the aggregate the whole customer or the whole order
+history, which makes every change contend for the same lock. Another is to
+change several aggregates in one transaction because it is convenient, which
+brings back the coupling the boundary was meant to prevent. A third is to let
+code reach into an aggregate's children and change them directly, which skips
+the root's rules.

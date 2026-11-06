@@ -49,6 +49,48 @@ show the empirical result: teams that ship in smaller, more frequent batches
 tend to be both faster and more stable. See also the [Delivery](../pages/delivery.md)
 map.
 
+## Worked example
+
+Consider a team that releases a feature once a month, and so batches a month
+of work into one release of roughly 1,200 changed lines. A bug found in
+production takes weeks to trace, because it could be in any of dozens of
+changes. Now consider the same team releasing every day, with batches of
+about 40 lines. A bug is usually traced to a single day's change, and the fix
+ships the same day. The total work is about the same, but the second team
+learns in hours and the first learns in weeks. The difference is not effort;
+it is the size of the unit that moves.
+
+## The transaction cost trade-off
+
+Smaller batches are not free. Every batch has a fixed cost to move: writing
+the release note, running the deployment, getting a review, handing off to
+another person. If that fixed cost is large, small batches cost more in total,
+which is why the knob is only useful when the transaction cost is reduced.
+Automation, standard interfaces, and cheap validation are how teams push the
+fixed cost down far enough that small batches win.
+
+## Batches hide in unexpected places
+
+A small pull request that waits three days for review is still a large batch
+in terms of time. The batch is the set of changes waiting for the same
+reviewer, not the diff. The same holds for a stack of ten small changes merged
+together on Friday. Batching often reappears at the handoffs, so reducing the
+batch in one stage can leave the queue in the next stage intact.
+
+## When not to use it
+
+When there is no feedback loop to speed up and no risk that is cheaper to
+discover early, the batch size may matter little. Some work has a natural
+unit that cannot be split without losing meaning, such as a regulatory
+change that must go live atomically.
+
+## Common mistakes
+
+Teams often shrink the release but not the review, or split the work into
+small tickets but keep the same release train. Another mistake is to treat
+batch size as a rule to apply without measuring transaction cost, which
+produces many tiny batches that each cost more than they save.
+
 ## Related
 
 [Cost of Delay](./cost-of-delay.md) explains why waiting is expensive, and
