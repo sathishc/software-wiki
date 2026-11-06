@@ -21,6 +21,7 @@ reference page.
 - [Testing & Quality](pages/testing.md) — The safety net that makes everything else possible: unit tests, TDD, the test pyramid, run automatically by CI. Tags: `moc`, `testing`, `tdd`, `quality`
 - [Architecture & Design](pages/architecture.md) — How a system is structured: DDD's lens, bounded contexts, monolith vs microservices, API design, patterns. Tags: `moc`, `architecture`
 - [Delivery](pages/delivery.md) — How software ships and tells you what's happening: CI/CD, DORA metrics, observability, code review. Tags: `moc`, `delivery`
+- [Lean Product Development](pages/lean-product-development.md) — Manage the flow of value, not busyness: cost of delay, queues and utilisation, WIP limits, batch size. Includes an analysis of the wiki's coverage and gaps. Tags: `moc`, `lean`, `flow`, `economics`
 
 ---
 
@@ -30,6 +31,7 @@ reference page.
 - [Kent Beck](people/kent-beck.md) — Author of Extreme Programming Explained (1999) and a principal originator of Agile software. With Martin Fowler he authored Refactoring; with Ward Cunningham he…
 - [Martin Fowler](people/martin-fowler.md) — Author of Refactoring (2001/2018), Patterns of Enterprise Application Architecture (2002), and the ubiquitous martinfowler.com — the single most cited practical…
 - [Michael Feathers](people/michael-feathers.md) — Author of Working Effectively with Legacy Code (2004) — the canonical book on the unglamorous, universally felt problem of code you cannot change safely. His work…
+- [Donald G. Reinertsen](people/donald-reinertsen.md) — Author of *The Principles of Product Development Flow* (2009) and the economic case for flow in product development: cost of delay, queues, WIP limits, and small batches. Tags: `person`, `lean`, `flow`, `economics`
 - [Robert-Martin](people/robert-martin.md) — Robert C. Martin ("Uncle Bob") is the voice behind the SOLID principles, the [Clean Code../concepts/clean-code.md movement, and a large part of the modern…
 
 ## Concepts
@@ -70,12 +72,21 @@ reference page.
 - [DORA Metrics](concepts/dora-metrics.md) — The DORA metrics (DevOps Research and Assessment) are a small, canonical set of four software-delivery throughput and stability metrics, first published in…
 - [Observability](concepts/observability.md) — Observability is the property of a running system: the ability to infer its internal state from its external outputs — without having to be inside it, and…
 
+### Lean & Flow
+
+- [Batch Size](concepts/batch-size.md) — Smaller batches cut cycle time, variability, and risk; the trade-off is transaction cost, which automation reduces. Tags: `lean`, `flow`, `economics`, `ci-cd`
+- [Cost of Delay](concepts/cost-of-delay.md) — The economic loss per unit of time a piece of value stays undelivered; the basis for sequencing work by WSJF. Tags: `lean`, `flow`, `economics`
+- [Little's Law](concepts/littles-law.md) — For a stable system, average work in progress equals throughput times average cycle time (L = λW). Tags: `lean`, `flow`, `queueing`
+- [Queueing & Utilization](concepts/queueing-and-utilization.md) — Queues, not workers, drive delay; high utilisation makes queues grow non-linearly. Tags: `lean`, `flow`, `queueing`, `economics`
+- [Work-in-Progress (WIP) Limits](concepts/wip-limits.md) — Capping work in progress controls cycle time and forces rate-matching between stages. Tags: `lean`, `flow`, `queueing`
+
 ---
 
 ## Sources
 
 - [Extreme Programming & Test-Driven Development — Kent Beck, Ward Cunningham](sources/beck-xp-tdd.md) — Works: Extreme Programming Explained (Kent Beck, 1999); the TDD red/green/refactor loop popularised through Ward Cunningham (1999) and Kent Beck. Ingested 2026-09-25.
 - [Clean Code, Code Review & Craftsmanship — Robert C. Martin](sources/clean-code-review.md) — Works: Clean Code (Robert C. "Uncle Bob" Martin, 2008); the modern code review practice; the software craftsmanship movement (e.g. The Pragmatic Programmer, Hunt &… Ingested 2026-09-25.
+- [The Principles of Product Development Flow — Donald G. Reinertsen (2009)](sources/reinertsen-product-development-flow.md) — Book: second-generation lean product development; roughly 175 principles on economics, queues, variability, batch size, WIP, and feedback. Compiled from secondary summaries, so principle codes need checking against the book. Ingested 2026-11-06.
 - [Domain-Driven Design — Eric Evans (2003)](sources/evans-ddd.md) — Book: Domain-Driven Design: Tackling Complexity in the Heart of Software (2003) Author: Eric Evans (the "blue book"). Ingested 2026-09-25.
 - [Working Effectively with Legacy Code — Michael Feathers (2004)](sources/feathers-legacy-code.md) — Book: Working Effectively with Legacy Code (Michael Feathers, 2004) Author: Michael Feathers. Ingested 2026-09-25.
 - [CI/CD, DORA & The DevOps Practice — Fowler, Forsgren et al.](sources/fowler-ci-cd.md) — Works: Continuous integration (Fowler, 2002); Continuous delivery (Fowler); Accelerate: The Science of DevOps (Forsgren, Humble, Kim, 2018) — origin of the DORA… Ingested 2026-09-25.

@@ -37,3 +37,25 @@ sub-domain tags actually in use; generated the full root `index.md`
 (4 pages, 5 people, 20 concepts, 7 sources); aligned `Gemfile`/`_config.yml`
 with the sat-wiki family (github-pages + cayman); git initialised and first
 commit made.
+
+## [2026-11-06] lint | Pre-ingest analysis of coverage and link health
+
+Reviewed the wiki before ingesting new material: 4 Maps of Content, 5 people,
+20 concepts, 7 sources. No pages covered economics, queueing, or flow as
+subjects. Link check found no orphans and no broken relative links in the
+existing corpus. Pre-existing issues were reported but not changed: malformed
+link syntax in `index.md` (Domain-Driven Design, Clean Code, Robert-Martin and
+Kent Beck entries) and stray emphasis markers in several pages. Recorded in
+`pages/lean-product-development.md` for a separate cleanup.
+
+## [2026-11-06] ingest | The Principles of Product Development Flow — Donald G. Reinertsen (2009)
+
+Added the Reinertsen source note (`sources/reinertsen-product-development-flow.md`,
+compiled from secondary summaries, so principle codes are unverified), a
+person page (`people/donald-reinertsen.md`), a Maps of Content page
+(`pages/lean-product-development.md`, which also holds the coverage analysis),
+and five concept pages: `concepts/cost-of-delay.md`, `concepts/queueing-and-utilization.md`,
+`concepts/batch-size.md`, `concepts/wip-limits.md`, `concepts/littles-law.md`.
+Updated `index.md` (new Lean & Flow section and entries), `pages/delivery.md`
+(related-maps link), and `CLAUDE.md` (new `lean`, `flow`, `economics`,
+`queueing` tags).

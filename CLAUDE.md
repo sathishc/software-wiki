@@ -70,6 +70,7 @@ below. A loose canonical set for this wiki:
 - **Architecture:** `design-patterns`, `architecture`, `domain-driven-design`, `microservices`, `monolith`, `api-design`, `functional-programming`, `bounded-context`, `ubiquitous-language`, `modeling`, `oop`
 - **Delivery:** `ci-cd`, `devops`, `dora`, `observability`, `deployment`, `delivery`, `agile`
 - **Culture:** `code-review`, `craftsmanship`, `philosophy`
+- **Lean & flow:** `lean`, `flow`, `economics`, `queueing`
 - **Meta:** `person`, `moc`, `comparison`
 
 ## Log format

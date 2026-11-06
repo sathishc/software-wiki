@@ -100,3 +100,6 @@ and *the* *whole* *point is to *keep *that loop *short.*
   *velocity* *pressure* *of shipping.*
 - [Architecture & Design](./architecture.md) — the *boundaries* that *delivery
   ships across* (*services* and *APIs* are *delivery* *units*).
+- [Lean Product Development](./lean-product-development.md) — the *economic*
+  case behind *small batches* and *fast feedback*: why *queues* and *cost of
+  delay*, not *busyness*, decide how *quickly* *value* *ships*.
