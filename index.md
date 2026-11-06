@@ -32,6 +32,7 @@ reference page.
 - [Martin Fowler](people/martin-fowler.md) — Author of Refactoring (2001/2018), Patterns of Enterprise Application Architecture (2002), and the ubiquitous martinfowler.com — the single most cited practical…
 - [Michael Feathers](people/michael-feathers.md) — Author of Working Effectively with Legacy Code (2004) — the canonical book on the unglamorous, universally felt problem of code you cannot change safely. His work…
 - [Donald G. Reinertsen](people/donald-reinertsen.md) — Author of *The Principles of Product Development Flow* (2009) and the economic case for flow in product development: cost of delay, queues, WIP limits, and small batches. Tags: `person`, `lean`, `flow`, `economics`
+- [Harry Percival & Bob Gregory](people/percival-gregory.md) — Authors of *Architecture Patterns with Python* (2020): applying DDD and TDD in Python, with the repository, service layer, unit of work, and ports-and-adapters patterns. Tags: `person`, `architecture`, `domain-driven-design`, `testing`
 - [Robert-Martin](people/robert-martin.md) — Robert C. Martin ("Uncle Bob") is the voice behind the SOLID principles, the [Clean Code../concepts/clean-code.md movement, and a large part of the modern…
 
 ## Concepts
@@ -64,6 +65,14 @@ reference page.
 - [Microservices](concepts/microservices.md) — Microservices is a software-architecture style in which a system is built as a collection of small, independently deployable services, each owning a bounded slice…
 - [Monolith](concepts/monolith.md) — A monolith (in software architecture) is a system built and deployed as a single, unified unit of code — one deployable artefact, often one codebase, one (or a few)…
 - [Ubiquitous Language](concepts/ubiquitous-language.md) — The ubiquitous language is a single, shared vocabulary — drawn from the domain experts' own words — used consistently in conversation, documentation, and code…
+- [Aggregate](concepts/aggregate.md) — A cluster of domain objects with one root and its own invariants; the unit that is loaded and saved in one transaction. Tags: `domain-driven-design`, `architecture`, `modeling`
+- [CQRS](concepts/cqrs.md) — Separating commands that change state from queries that read it, so each side can use its own model. Tags: `architecture`, `microservices`, `api-design`
+- [Dependency Injection](concepts/dependency-injection.md) — Passing dependencies in from outside, wired at the application's edge, so the core is testable with fakes. Tags: `design-patterns`, `architecture`, `testing`
+- [Domain Events](concepts/domain-events.md) — Past-tense records of domain facts that other parts of the system react to, decoupling aggregates and enabling eventual consistency. Tags: `architecture`, `domain-driven-design`, `microservices`
+- [Ports and Adapters](concepts/ports-and-adapters.md) — Hexagonal architecture: the core depends on abstract ports, and infrastructure implements them as adapters. Tags: `architecture`, `design-patterns`, `testing`
+- [Repository Pattern](concepts/repository-pattern.md) — An abstraction over storage that presents domain objects as an in-memory collection, so the model stays free of infrastructure. Tags: `architecture`, `domain-driven-design`, `design-patterns`
+- [Service Layer](concepts/service-layer.md) — A thin layer of use-case coordination between adapters and the domain; owns the transaction boundary but holds no business rules. Tags: `architecture`, `domain-driven-design`
+- [Unit of Work](concepts/unit-of-work.md) — Groups changes into one atomic commit or rollback, giving the service layer control of the transaction. Tags: `architecture`, `domain-driven-design`, `design-patterns`
 
 ### Delivery & Culture
 
@@ -87,6 +96,7 @@ reference page.
 - [Extreme Programming & Test-Driven Development — Kent Beck, Ward Cunningham](sources/beck-xp-tdd.md) — Works: Extreme Programming Explained (Kent Beck, 1999); the TDD red/green/refactor loop popularised through Ward Cunningham (1999) and Kent Beck. Ingested 2026-09-25.
 - [Clean Code, Code Review & Craftsmanship — Robert C. Martin](sources/clean-code-review.md) — Works: Clean Code (Robert C. "Uncle Bob" Martin, 2008); the modern code review practice; the software craftsmanship movement (e.g. The Pragmatic Programmer, Hunt &… Ingested 2026-09-25.
 - [The Principles of Product Development Flow — Donald G. Reinertsen (2009)](sources/reinertsen-product-development-flow.md) — Book: second-generation lean product development; roughly 175 principles on economics, queues, variability, batch size, WIP, and feedback. Compiled from secondary summaries, so principle codes need checking against the book. Ingested 2026-11-06.
+- [Architecture Patterns with Python — Percival & Gregory (2020)](sources/architecture-patterns-with-python.md) — Book: DDD, TDD and event-driven design in Python; repository, service layer, unit of work, aggregates, domain events, ports and adapters. Written from knowledge and secondary summaries, so verify before quoting. Ingested 2026-11-06.
 - [Domain-Driven Design — Eric Evans (2003)](sources/evans-ddd.md) — Book: Domain-Driven Design: Tackling Complexity in the Heart of Software (2003) Author: Eric Evans (the "blue book"). Ingested 2026-09-25.
 - [Working Effectively with Legacy Code — Michael Feathers (2004)](sources/feathers-legacy-code.md) — Book: Working Effectively with Legacy Code (Michael Feathers, 2004) Author: Michael Feathers. Ingested 2026-09-25.
 - [CI/CD, DORA & The DevOps Practice — Fowler, Forsgren et al.](sources/fowler-ci-cd.md) — Works: Continuous integration (Fowler, 2002); Continuous delivery (Fowler); Accelerate: The Science of DevOps (Forsgren, Humble, Kim, 2018) — origin of the DORA… Ingested 2026-09-25.

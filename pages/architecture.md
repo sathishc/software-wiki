@@ -78,6 +78,15 @@ moves) and **[SOLID](../concepts/solid.md)** (the *single-responsibility* family
 - **[Design Patterns](../concepts/design-patterns.md) + [SOLID](../concepts/solid.md)** are the *tactics* — the *named* and
   *principle-based* *decoupling* moves that *shape* the code *inside* the
   boundaries above.
+- **[Ports and Adapters](../concepts/ports-and-adapters.md)** and the **[Repository Pattern](../concepts/repository-pattern.md)** put the
+  *domain* at the centre, with *infrastructure* at the edges. The
+  **[Service Layer](../concepts/service-layer.md)** and **[Unit of Work](../concepts/unit-of-work.md)** coordinate
+  each use case and its transaction, and **[Dependency Injection](../concepts/dependency-injection.md)** wires the
+  real pieces in at the edge, so the core can be tested without them.
+- **[Aggregate](../concepts/aggregate.md)** and **[Domain Events](../concepts/domain-events.md)** draw the *consistency*
+  boundary inside the model and carry changes across it, and **[CQRS](../concepts/cqrs.md)** splits the write side
+  from the read side when their shapes diverge. These are the patterns from
+  [Percival and Gregory](../people/percival-gregory.md)'s *Architecture Patterns with Python*.
 
 The **unifying thread** is *boundaries, and the *reason* for them*: **a
 boundary is *earned* when what's on the *two sides* *changes *independently.***

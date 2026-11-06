@@ -59,3 +59,14 @@ and five concept pages: `concepts/cost-of-delay.md`, `concepts/queueing-and-util
 Updated `index.md` (new Lean & Flow section and entries), `pages/delivery.md`
 (related-maps link), and `CLAUDE.md` (new `lean`, `flow`, `economics`,
 `queueing` tags).
+
+## [2026-11-06] ingest | Architecture Patterns with Python — Harry Percival & Bob Gregory (2020)
+
+Added the source note (`sources/architecture-patterns-with-python.md`, written from
+general knowledge and checked against secondary summaries, so unverified against the
+text), a people page (`people/percival-gregory.md`), and eight concept pages:
+`concepts/repository-pattern.md`, `concepts/service-layer.md`,
+`concepts/unit-of-work.md`, `concepts/aggregate.md`, `concepts/domain-events.md`,
+`concepts/ports-and-adapters.md`, `concepts/dependency-injection.md`, and
+`concepts/cqrs.md`. Added a synthesis section to `pages/architecture.md` and
+index entries in `index.md`. No new tags were needed.
