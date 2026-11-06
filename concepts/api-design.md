@@ -77,3 +77,4 @@ later. The [Bounded Context](./bounded-context.md) is the unit: *each context ex
 - [Design Patterns](design-patterns.md)
 - [Ports and Adapters (Hexagonal Architecture)](ports-and-adapters.md)
 - [Monolith](monolith.md)
+- [Building Software with AI Agents](../pages/ai-agents-software-engineering.md)

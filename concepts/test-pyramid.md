@@ -67,3 +67,4 @@ your testing budget so the *total* feedback stays fast even as the suite grows.
 - [Test-Driven Development (TDD)](tdd.md)
 - [Continuous Integration & Continuous Delivery (CI/CD)](ci-cd.md)
 - [Service Layer](service-layer.md)
+- [Building Software with AI Agents](../pages/ai-agents-software-engineering.md)

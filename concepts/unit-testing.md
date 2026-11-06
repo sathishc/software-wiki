@@ -77,3 +77,4 @@ Unit testing is the *enabler* the rest of the wiki rests on:
 - [Refactoring](refactoring.md)
 - [Dependency Injection](dependency-injection.md)
 - [Ports and Adapters (Hexagonal Architecture)](ports-and-adapters.md)
+- [Building Software with AI Agents](../pages/ai-agents-software-engineering.md)

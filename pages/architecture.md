@@ -2,7 +2,7 @@
 title: Architecture & Design
 tags: [moc, architecture, microservices]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-11-06
 sources: [sources/evans-ddd.md, sources/gang-of-four.md, sources/fowler-refactoring.md]
 layout: default
 parent: Pages
@@ -118,3 +118,7 @@ it; *patterns* and *SOLID* *decouple* it *inside.*
 - [Testing & Quality](./testing.md) — the *net* that *protects* the
   boundaries.
 - [Delivery](./delivery.md) — how you *ship* and *observe* the boundaries.
+
+## See also
+
+- [Building Software with AI Agents](./ai-agents-software-engineering.md) — how agent-built code is tested, reviewed and delivered.

@@ -69,3 +69,4 @@ discipline:
 - [Extreme Programming](xp.md)
 - [Ports and Adapters (Hexagonal Architecture)](ports-and-adapters.md)
 - [Clean Code](clean-code.md)
+- [Building Software with AI Agents](../pages/ai-agents-software-engineering.md)

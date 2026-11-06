@@ -22,6 +22,7 @@ reference page.
 - [Architecture & Design](pages/architecture.md) — How a system is structured: DDD's lens, bounded contexts, monolith vs microservices, API design, patterns. Tags: `moc`, `architecture`
 - [Delivery](pages/delivery.md) — How software ships and tells you what's happening: CI/CD, DORA metrics, observability, code review. Tags: `moc`, `delivery`
 - [Lean Product Development](pages/lean-product-development.md) — Manage the flow of value, not busyness: cost of delay, queues and utilisation, WIP limits, batch size. Includes an analysis of the wiki's coverage and gaps. Tags: `moc`, `lean`, `flow`, `economics`
+- [Building Software with AI Agents](pages/ai-agents-software-engineering.md) — How agent-built software works: agent loops, harnesses, context, tool design, evals, long-running work and review, drawn from Anthropic, OpenAI and Stripe. Tags: `moc`, `ai-agents`, `evals`, `delivery`
 
 ---
 
@@ -81,6 +82,17 @@ reference page.
 - [DORA Metrics](concepts/dora-metrics.md) — The DORA metrics (DevOps Research and Assessment) are a small, canonical set of four software-delivery throughput and stability metrics, first published in…
 - [Observability](concepts/observability.md) — Observability is the property of a running system: the ability to infer its internal state from its external outputs — without having to be inside it, and…
 
+### AI Agents
+
+- [AI Agents](concepts/ai-agents.md) — An LLM in a loop that chooses tools and acts on results; how agents differ from workflows and single model calls. Tags: `ai-agents`, `architecture`, `design-patterns`
+- [Agent Evals](concepts/agent-evals.md) — Evals as the test suite for agents: tasks, trials, graders, capability versus regression evals, isolation. Tags: `ai-agents`, `evals`, `testing`
+- [Agent Harness](concepts/agent-harness.md) — The code around the model that runs the loop, enforces limits and isolates trials. Tags: `ai-agents`, `architecture`, `evals`
+- [Agent Tool Design](concepts/agent-tool-design.md) — Designing tools as an agent-computer interface: few, namespaced, token-efficient, well described. Tags: `ai-agents`, `api-design`
+- [Agentic Workflow Patterns](concepts/agentic-workflow-patterns.md) — Prompt chaining, routing, parallelisation, orchestrator-workers and evaluator-optimiser. Tags: `ai-agents`, `design-patterns`
+- [Context Engineering](concepts/context-engineering.md) — Deciding what goes into the context window: a finite attention budget, compaction and just-in-time retrieval. Tags: `ai-agents`, `context-engineering`
+- [Human Review of Agent Work](concepts/human-review-of-agent-work.md) — Applying code review to agent output: keep changes small, let CI check the mechanical parts. Tags: `ai-agents`, `code-review`
+- [Long-Running Agents](concepts/long-running-agents.md) — Agents that span many sessions: initializer and coding sessions, feature lists, clean handoffs. Tags: `ai-agents`, `context-engineering`, `delivery`
+
 ### Lean & Flow
 
 - [Batch Size](concepts/batch-size.md) — Smaller batches cut cycle time, variability, and risk; the trade-off is transaction cost, which automation reduces. Tags: `lean`, `flow`, `economics`, `ci-cd`
@@ -93,6 +105,13 @@ reference page.
 
 ## Sources
 
+- [Building Effective AI Agents — Anthropic (2024)](sources/anthropic-building-effective-agents.md) — Workflows versus agents, the augmented LLM, five workflow patterns, and simplicity first. From search excerpts; full text not retrieved. Ingested 2026-11-06.
+- [Effective Context Engineering for AI Agents — Anthropic (2025)](sources/anthropic-context-engineering.md) — Context as a finite attention budget; compaction, structured notes, sub-agents. From excerpts. Ingested 2026-11-06.
+- [Writing Effective Tools for AI Agents — Anthropic](sources/anthropic-writing-tools-for-agents.md) — Tool design as an agent-computer interface; namespacing, response formats, evaluation. From excerpts. Ingested 2026-11-06.
+- [Demystifying Evals for AI Agents — Anthropic](sources/anthropic-demystifying-evals.md) — Eval vocabulary, capability versus regression evals, isolated trials, graders. From excerpts. Ingested 2026-11-06.
+- [Effective Harnesses for Long-Running Agents — Anthropic](sources/anthropic-long-running-harnesses.md) — Initializer and coding sessions, feature lists, progress files. From excerpts. Ingested 2026-11-06.
+- [A Practical Guide to Building Agents — OpenAI](sources/openai-practical-guide-building-agents.md) — Agent components, model selection, manager and handoff orchestration, guardrails. From excerpts. Ingested 2026-11-06.
+- [Minions and the Payment Method Factory — Stripe](sources/stripe-minions-and-payment-method-factory.md) — Unattended coding agents producing human-reviewed PRs; reusable prompts and an observer agent. From excerpts. Ingested 2026-11-06.
 - [Extreme Programming & Test-Driven Development — Kent Beck, Ward Cunningham](sources/beck-xp-tdd.md) — Works: Extreme Programming Explained (Kent Beck, 1999); the TDD red/green/refactor loop popularised through Ward Cunningham (1999) and Kent Beck. Ingested 2026-09-25.
 - [Clean Code, Code Review & Craftsmanship — Robert C. Martin](sources/clean-code-review.md) — Works: Clean Code (Robert C. "Uncle Bob" Martin, 2008); the modern code review practice; the software craftsmanship movement (e.g. The Pragmatic Programmer, Hunt &… Ingested 2026-09-25.
 - [The Principles of Product Development Flow — Donald G. Reinertsen (2009)](sources/reinertsen-product-development-flow.md) — Book: second-generation lean product development; roughly 175 principles on economics, queues, variability, batch size, WIP, and feedback. Compiled from secondary summaries, so principle codes need checking against the book. Ingested 2026-11-06.

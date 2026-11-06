@@ -71,6 +71,7 @@ below. A loose canonical set for this wiki:
 - **Delivery:** `ci-cd`, `devops`, `dora`, `observability`, `deployment`, `delivery`, `agile`
 - **Culture:** `code-review`, `craftsmanship`, `philosophy`
 - **Lean & flow:** `lean`, `flow`, `economics`, `queueing`
+- **AI agents:** `ai-agents`, `evals`, `context-engineering`
 - **Meta:** `person`, `moc`, `comparison`
 
 ## Log format

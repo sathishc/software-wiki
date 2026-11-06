@@ -2,7 +2,7 @@
 title: Testing & Quality
 tags: [moc, testing, tdd, quality]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-11-06
 sources: [sources/beck-xp-tdd.md, sources/feathers-legacy-code.md, sources/fowler-ci-cd.md]
 layout: default
 parent: Pages
@@ -102,3 +102,7 @@ all of it).
 - [Code Quality](./code-quality.md) — the *craft* that tests *protect*.
 - [Delivery](./delivery.md) — the *measured* outcome of all of this
   ([DORA Metrics](../concepts/dora-metrics.md)).
+
+## See also
+
+- [Building Software with AI Agents](./ai-agents-software-engineering.md) — how agent-built code is tested, reviewed and delivered.

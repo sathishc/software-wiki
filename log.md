@@ -104,3 +104,18 @@ person and map page (eight new inline links, mostly in the Reinertsen and Domain
 pages). Added a "See also" section to 33 concept and person pages, listing related pages
 that the page did not already link. Sources were left unchanged, since they are immutable.
 Updated `updated` dates on the 45 changed pages.
+
+## [2026-11-06] ingest | Building software with AI agents (Anthropic, OpenAI, Stripe)
+
+Added seven source notes (`sources/anthropic-building-effective-agents.md`,
+`sources/anthropic-context-engineering.md`, `sources/anthropic-writing-tools-for-agents.md`,
+`sources/anthropic-demystifying-evals.md`, `sources/anthropic-long-running-harnesses.md`,
+`sources/openai-practical-guide-building-agents.md`, `sources/stripe-minions-and-payment-method-factory.md`),
+eight concept pages (`concepts/ai-agents.md`, `concepts/agent-harness.md`,
+`concepts/context-engineering.md`, `concepts/agent-tool-design.md`, `concepts/agent-evals.md`,
+`concepts/agentic-workflow-patterns.md`, `concepts/human-review-of-agent-work.md`,
+`concepts/long-running-agents.md`) and a map (`pages/ai-agents-software-engineering.md`).
+Backlinks added to the code-review, ci-cd, api-design, unit-testing, test-pyramid and tdd
+concept pages, and to the testing, delivery and architecture maps. Index and schema tags updated.
+Caveat: the full text of the sources could not be fetched (host blocked by the sandbox
+allowlist), so the notes are written from search excerpts and marked as such.

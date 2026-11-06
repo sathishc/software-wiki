@@ -2,7 +2,7 @@
 title: Delivery
 tags: [moc, delivery, ci-cd, dora, devops]
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-11-06
 sources: [sources/fowler-ci-cd.md]
 layout: default
 parent: Pages
@@ -103,3 +103,7 @@ and *the* *whole* *point is to *keep *that loop *short.*
 - [Lean Product Development](./lean-product-development.md) — the *economic*
   case behind *small batches* and *fast feedback*: why *queues* and *cost of
   delay*, not *busyness*, decide how *quickly* *value* *ships*.
+
+## See also
+
+- [Building Software with AI Agents](./ai-agents-software-engineering.md) — how agent-built code is tested, reviewed and delivered.

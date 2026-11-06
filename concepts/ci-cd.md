@@ -82,3 +82,4 @@ working.
 - [Code Review](code-review.md)
 - [Test Pyramid](test-pyramid.md)
 - [Test-Driven Development (TDD)](tdd.md)
+- [Building Software with AI Agents](../pages/ai-agents-software-engineering.md)

@@ -74,3 +74,4 @@ shape that high-performing teams converge on:
 - [Batch Size](batch-size.md)
 - [Queueing & Utilization](queueing-and-utilization.md)
 - [Technical Debt](technical-debt.md)
+- [Building Software with AI Agents](../pages/ai-agents-software-engineering.md)
